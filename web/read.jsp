@@ -12,5 +12,9 @@
     <body>
         <h1>Players</h1>
         <%= table %>
+        
+        <br><br>
+        
+        <a href ="add">Add A New Player</a>
     </body>
 </html>
