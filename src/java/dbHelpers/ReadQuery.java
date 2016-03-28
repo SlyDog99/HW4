@@ -20,7 +20,7 @@ public class ReadQuery {
     private ResultSet results;
     
     public ReadQuery() {
-    
+   
     Properties props = new Properties(); //MWC
     InputStream instr = getClass().getResourceAsStream("dbConn.properties");
         try {
@@ -112,6 +112,9 @@ public class ReadQuery {
                 table += player.getPlayerAge();
                 table+= "</td>";
                 
+                table+= "<td>";
+                table += "<a href=delete?PlayerID=" + player.getPlayerID() + "> Delete </a>";
+                table+= "</td>";
                 
                 table+= "</tr>";
                 
